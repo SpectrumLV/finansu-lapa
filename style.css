@@ -300,7 +300,7 @@ text-align: center;
 }
 
 /*case*/
-
+/*
 .case-vid h2{
   font-family: Catamaran;
   font-size: 28px;
@@ -327,23 +327,25 @@ text-transform: uppercase;
 column-count: 3;
 column-gap: 30px;
 }
-
+*/
 /*footer*/
 footer{
   width: calc(100% - 80px);
   padding: 40px 40px;
   margin-top: 20px;
-  background-color: #111;
+  background-color: white;
   overflow: hidden;
 }
 footer ul {
   width: fit-content;
   float: left;
   padding-left: 20px;
+  
 }
 footer ul li {
   display:block;
   list-style: none;
+  background-color: white;
 
 }
 footer ul li a{
@@ -372,7 +374,7 @@ footer ul li a{
   footer ul li p{
     font-family: Catamaran;
     font-size: 16px;
-    color: #fff;
+    color: white;
     line-height: 40px;
     text-transform: uppercase;
   }

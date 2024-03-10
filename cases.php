@@ -4,7 +4,7 @@
 
       <div class="wrapper">
   <h2>Piemēri</h2>
-  <a href="case1.html">
+  <a href="case1.php">
         <div class="classes-link">
           <p>Piemērs 1</p>
         </div>

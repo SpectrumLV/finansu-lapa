@@ -12,13 +12,13 @@
 
 <body>
   <header>
-    <a href="index.html" class="header-brand">KRLM</a>
+    <a href="index.php" class="header-brand">KRLM</a>
     <nav>
       <ul>
         <li><a href="cases.php">Uzdevumi</a></li>
         <li><a href="par-mani.php">Par mums</a></li>
         <li><a href="kontakti.php">kontakti</a></li>
       </ul>
-      <a href="anketa.php" class="header-cases">Uzdevumi</a>
+      <a href="cases.php" class="header-cases">Uzdevumi</a>
     </nav>
   </header>
