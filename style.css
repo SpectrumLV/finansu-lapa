@@ -51,14 +51,13 @@ a {
     background:transparent;
 }
 
-/* change colours to suit your needs */
+
 ins {
     background-color:#ff9;
     color:#000;
     text-decoration:none;
 }
 
-/* change colours to suit your needs */
 mark {
     background-color:#ff9;
     color:#000;
@@ -80,7 +79,7 @@ table {
     border-spacing:0;
 }
 
-/* change border colour to suit your needs */
+
 hr {
     display:block;
     height:1px;
@@ -177,7 +176,7 @@ header .header-cases{
 .index-banner{
   width: 100%;
   height: calc(100vh - 100px);
-  background-image: url(img.jpg);
+  background-image: url(bilde.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -234,7 +233,7 @@ line-height: 100px;
   .index-banner{
     width: 100%;
     height: 450px;
-    background-image: url(img.jpg);
+    background-image: url(bilde.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -382,3 +381,144 @@ footer ul li a{
     padding-right: 30px;
   }
 }
+
+
+/*contacts main*/
+.contacts{
+  width: calc(100% - 200px);
+  padding: 40px 40px;
+  margin-top: 20px;
+
+  background-color: #5A5A5A;
+  overflow: hidden;
+  border-radius: 20px;
+ 
+  
+}
+
+.contacts ul {
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+  margin-right: 200px;
+  margin-top: 50px;
+}
+.contacts ul li {
+  display:block;
+  list-style: none;
+  
+
+  font-family: Catamaran;
+    font-size: 20px;
+    color: #fff;
+    line-height: 40px;
+
+}
+.contacts-links-main{
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+
+/*par mani main*/
+.par-mani{
+  width: calc(100% - 150px);
+  padding: 40px 40px;
+  margin-top: 20px;
+  font-family: Catamaran;
+  background-color: #D3D3D3;
+  overflow: hidden;
+  border-radius: 20px;
+  color: #5A5A5A;
+}
+.par-mani h1{
+  font-size: 40px;  
+  text-align: center;
+  margin-bottom: 50px;
+}
+.par-mani p{
+  font-size: 25px;
+  text-align: center;
+  padding: 0 50px;
+  line-height: 30px;
+  
+  
+}
+.par-mani h2{
+  font-size: 30px;  
+  text-align: center;
+  margin-top: 30px;
+  
+}
+.par-mani a {
+  color: white;
+}
+
+/*anketa*/
+.anketa{
+  width: 100%;
+  padding: 40px 40px;
+  margin-top: 20px;
+  font-family: Catamaran;
+  background-color: #e7e6e6;
+  overflow: hidden;
+  
+  color: #9e9e9e;
+ 
+}
+.anketa h3{
+  text-align: center;
+  margin-bottom: 30px;
+  color: #3b3b3b;
+ font-size: 30px;
+ font-weight: bold;
+}
+
+form{
+ text-align: left;
+
+ text-align: center;
+}
+form input{
+  width: 500px;
+font-size: 20px;
+margin-bottom: 15px;
+padding: 10px 10px;
+ }
+ form textarea{
+  width: 500px;
+font-size: 20px;
+margin-bottom: 15px;
+padding: 10px 10px;
+ }
+
+
+ .success h3{
+text-align: center;
+font-size: 80px;
+margin: 20px auto;
+font-family: Catamaran;
+
+
+ }
+
+
+
+
+
+/* @media only screen and (min-width: 1000px) {
+  .contacts-links-classes{
+    display: block;
+  }
+  .contacts ul li p{
+    font-family: Catamaran;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+  .contacts ul {
+
+    padding-right: 30px;
+  }
+} */
