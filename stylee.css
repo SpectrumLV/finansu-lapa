@@ -300,7 +300,7 @@ text-align: center;
 }
 
 /*case*/
-/*
+
 .case-vid h2{
   font-family: Catamaran;
   font-size: 28px;
@@ -310,12 +310,12 @@ text-transform: uppercase;
 text-align: center;
 }
 .case-vid article h3{
+  padding-top: 30px;
   font-family: Catamaran;
   font-size: 28px;
   color: #111;
   font-weight: 600;
-text-transform: uppercase;
-padding-bottom: 20px;
+padding-bottom: 10px;
 }
 .case-vid article p{
   font-family: Catamaran;
@@ -324,16 +324,15 @@ padding-bottom: 20px;
   color: #111;
   font-weight: 600;
 text-transform: uppercase;
-column-count: 3;
-column-gap: 30px;
+padding-bottom: 30px;
 }
-*/
+
 /*footer*/
 footer{
   width: calc(100% - 80px);
   padding: 40px 40px;
   margin-top: 20px;
-  background-color: white;
+  background-color: gray;
   overflow: hidden;
 }
 footer ul {
@@ -345,10 +344,16 @@ footer ul {
 footer ul li {
   display:block;
   list-style: none;
-  background-color: white;
+
 
 }
 footer ul li a{
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #fff;
+  line-height: 40px;
+}
+footer ul li p{
   font-family: Catamaran;
   font-size: 16px;
   color: #fff;
@@ -374,9 +379,8 @@ footer ul li a{
   footer ul li p{
     font-family: Catamaran;
     font-size: 16px;
-    color: white;
+    color: #fff;
     line-height: 40px;
-    text-transform: uppercase;
   }
   footer ul {
 

@@ -6,7 +6,7 @@
   <h2>Piemēri</h2>
   <a href="case1.php">
         <div class="classes-link">
-          <p>Piemērs 1</p>
+          <p style="background-image: url('inflacija.jpg');">Inflācija</p>
         </div>
   </a>
   <a href="case1.html">
