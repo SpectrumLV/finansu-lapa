@@ -5,15 +5,15 @@
         <li><p>E-pasts</p></li>
         <li><p>Telefona numurs</p></li>
         <li><p>Adrese</p></li>
-        <li><p>GitHub</p></li>
+
       </ul>
       <ul class="footer-links-classes">
         
         
-        <li><p>reinisis.br@gmail.com</p></li>
+        <li><p>KRLM@info.lv</p></li>
         <li><p>+371 28442903</p></li>
         <li><p>Ķīpsalas iela 6a</p></li>
-        <li><p>SpectrumLV</p></li>
+
       </ul>
 
      

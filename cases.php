@@ -9,9 +9,9 @@
           <p style="background-image: url('inflacija.jpg');">Inflācija</p>
         </div>
   </a>
-  <a href="case1.html">
+  <a href="case2.php">
         <div class="classes-link">
-          <p>Piemērs 2</p>
+          <p>Iekšzemes kopprodukts</p>
         </div>
   </a>
   <a href="case1.html">
