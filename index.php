@@ -4,7 +4,7 @@ include_once 'navbar.php';
   <main>
     <section class="index-banner">
       <div class="vertical-center">
-        <h2>Finanšu <br> pratība</h2>
+        <h2>Mūsu finanšu <br> pratība</h2>
         <h1>Interaktīva apmācības platforma.</h1>
       </div>
     </section>
