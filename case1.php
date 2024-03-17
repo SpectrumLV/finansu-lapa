@@ -1,28 +1,134 @@
 <?php include_once('navbar.php'); ?>
-  <main>
-      <div class="wrapper">
+
+<main>
+  <div class="wrapper">
     <section class="case-vid">
-  <h2>Inflācija</h2>
-  <article>
-    <h3>Vispārējs cenu kāpums</h3>
-    <p>Tirgus ekonomikā preču un pakalpojumu cenas ik brīdi var mainīties. Dažas cenas pieaug, citas – samazinās. Par inflāciju runājam tad, kad vērojams vispārējs preču un pakalpojumu cenu kāpums, nevis pieaug tikai atsevišķu produktu cenas. Tas nozīmē, ka šodien par 1 euro var nopirkt mazāk nekā vakar. Citiem vārdiem runājot, inflācija laika gaitā samazina valūtas vērtību.</p>
-  </article>
-  <article>
-    <h3>Ir svarīgākas un mazāk svarīgas cenu pārmaiņas</h3>
-    <p>Aprēķinot vidējo cenu kāpumu, lielāks svars tiek piešķirts produktiem, par kuriem tērējam vairāk naudas, piemēram, elektrībai, nekā produktiem, par kuriem tērējam mazāk naudas, piemēram, cukuram vai pastmarkām.</p>
-  </article>
-  <article>
-    <h3>Katru gadu tiek salīdzināta "patēriņa groza" cena</h3>
-    <p>Visas preces un pakalpojumi, ko mājsaimniecības patērē gada laikā, veido "patēriņa grozu". Katram produktam šajā grozā ir konkrēta cena, kas laika gaitā var mainīties. Gada inflācija ir visa groza cena konkrētā mēnesī salīdzinājumā ar tā cenu tajā pašā mēnesī pirms gada.</p>
-  </article>
-  <article>
-    <h3>Inflācija eurozonā</h3>
-    <p>Eurozonā patēriņa cenu inflāciju nosaka pēc saskaņotā patēriņa cenu indeksa, ko bieži apzīmē ar akronīmu SPCI. Apzīmējums "saskaņotais" nozīmē, ka visās Eiropas Savienības dalībvalstīs to aprēķina pēc vienotas metodoloģijas. Tādējādi tiek nodrošināts, ka vienas valsts datus var salīdzināt ar citas valsts datiem.<br><br>
-Šis rādītājs ļauj labi sekot līdzi cenu pārmaiņām tautsaimniecībā. Tas ir kā karte, kas palīdz mums ECB pieņemt pareizos lēmumus.
-<br><br>
-Mūsu pienākums ir saglabāt cenu stabilitāti. Mēs to darām, nodrošinot zemu, stabilu un prognozējamu inflāciju (cenu pārmaiņu tempu laika gaitā), kam vidējā termiņā jāsaglabājas 2 % līmenī.</p>
-  </article>
+      <h2>Inflācija</h2>
+      <article>
+        <h3>Vispārējs cenu kāpums</h3>
+        <p>Tirgus ekonomikā preču un pakalpojumu cenas ik brīdi var mainīties. Dažas cenas pieaug, citas – samazinās. Par inflāciju runājam tad, kad vērojams vispārējs preču un pakalpojumu cenu kāpums, nevis pieaug tikai atsevišķu produktu cenas. Tas nozīmē, ka šodien par 1 euro var nopirkt mazāk nekā vakar. Citiem vārdiem runājot, inflācija laika gaitā samazina valūtas vērtību.</p>
+      </article>
+      <!-- Other articles -->
     </section>
-  </main>
-  
-  <?php include_once('footer.php'); ?>
+  </div>
+
+  <!-- Quiz container -->
+  <div id="quiz-container" class="wrapper">
+    <h2>Quiz</h2>
+    <div id="question"></div>
+
+    <div class="progress">
+      <div id="progress-bar" class="progress-bar"></div>
+    </div>
+    <div id="options"></div>
+  </div>
+
+<!-- Congratulations Popup -->
+<div id="congratulations-popup" class="popup" style= "display: none">
+    <div class="popup-content">
+
+      <h2>Congratulations!</h2>
+      <p>You have completed the quiz successfully.</p>
+    </div>
+  </div>
+
+
+
+</main>
+
+<?php include_once('footer.php'); ?>
+
+<script>
+  // Define quiz questions
+  const questions = [
+    {
+      question: "What causes inflation?",
+      options: ["Increase in money supply", "Decrease in money supply", "Stable money supply", "Change in interest rates"],
+      answer: 0 // Index of the correct answer in options array
+    },
+    {
+      question: "What is the average inflation target in the eurozone?",
+      options: ["1%", "2%", "3%", "4%"],
+      answer: 1
+    },
+    {
+      question: "How is inflation measured in the eurozone?",
+      options: ["GDP", "CPI", "Unemployment rate", "Trade balance"],
+      answer: 1
+    }
+  ];
+
+  let currentQuestionIndex = 0;
+  let correctAnswers = 0; // Variable to track correct answers
+  const quizContainer = document.getElementById('quiz-container');
+  const questionElement = document.getElementById('question');
+  const optionsElement = document.getElementById('options');
+  const progressBar = document.getElementById('progress-bar');
+  const congratulationsPopup = document.getElementById('congratulations-popup');
+
+  function showQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+    questionElement.textContent = currentQuestion.question;
+    optionsElement.innerHTML = '';
+    currentQuestion.options.forEach((option, index) => {
+      const button = document.createElement('button');
+      button.textContent = option;
+      button.addEventListener('click', () => checkAnswer(index));
+      optionsElement.appendChild(button);
+    });
+    updateProgressBar();
+  }
+
+  function showCongratulationsPopupWithDelay() {
+    setTimeout(() => {
+        showCongratulationsPopup();
+    }, 800); // Adjust the delay time as needed (in milliseconds)
+}
+
+
+  function checkAnswer(selectedIndex) {
+    const currentQuestion = questions[currentQuestionIndex];
+    if (selectedIndex === currentQuestion.answer) {
+      correctAnswers++;
+      updateProgressBar();
+      currentQuestionIndex++;
+    } else{
+      resetQuiz();
+    }
+    
+    if (currentQuestionIndex < questions.length) {
+      showQuestion();
+    } else {
+      updateProgressBar();
+      showCongratulationsPopupWithDelay()
+    }
+  }
+
+  function updateProgressBar() {
+    const percentage = (correctAnswers / questions.length) * 100;
+    progressBar.style.width = `${percentage}%`;
+  }
+
+  function showCongratulationsPopup() {
+    quizContainer.style.display = 'none';
+    
+    congratulationsPopup.style.display = 'block';
+
+  }
+
+  function closePopup() {
+    congratulationsPopup.style.display = 'none';
+
+    resetQuiz();
+  }
+
+  function resetQuiz() {
+    currentQuestionIndex = 0;
+    correctAnswers = 0;
+    progressBar.style.width = '0%';
+    showQuestion();
+  }
+
+  // Start the quiz
+  showQuestion();
+</script>
