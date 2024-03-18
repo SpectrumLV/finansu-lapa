@@ -8,9 +8,11 @@
 <div class="container">
   <div class="row">
 
-  <div class="col-md-4" style="margin-right: 300px; text-align: center">
+  <div class="col-md-6" style="margin-right: 100px; text-align: center">
       <h3>INFLĀCIJA</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis convallis ipsum. Ut nec risus et dolor commodo viverra. Vestibulum scelerisque, nisl ut interdum feugiat, nunc sem suscipit est, nec vehicula ipsum nisi eget est.</p>
+      <p>Inflācija apzīmē cenu pieauguma procesu. 
+Inflāciju mēra kā cenu vidējā līmeņa izmaiņu procentuālā izteiksmē
+noteiktā laika posmā - mēnesī, ceturksnī, gadā u.c.</p>
     </div>
     <div class="col-md-4">
       <div class="image-container">
@@ -28,19 +30,21 @@
 <section class="case-vid">
       
       <article>    
-      <div class="container" style="margin-top: 120px">
+      <div class="container" style="margin-top: 100px">
         <div class="row">
       
         
-          <div class="col-md-4" style="margin-right: 50px">
+          <div class="col-md-4" style="margin-right: 100px">
             <div class="image-container">
-            <iframe width="460" height="315" src="https://www.youtube.com/embed/ZfPxojh0Dyc?si=wIGCeQIVbpYXui20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="500" height="280" src="https://www.youtube.com/embed/ZfPxojh0Dyc?si=wIGCeQIVbpYXui20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div>
 
-          <div class="col-md-6" style="text-align: center">
+          <div class="col-md-6" style="text-align: center; padding-right: 0px margin-right: 0px">
             <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis convallis ipsum. Ut nec risus et dolor commodo viverra. Vestibulum scelerisque, nisl ut interdum feugiat, nunc sem suscipit est, nec vehicula ipsum nisi eget est.</p>
+            <p>Inflācija apzīmē cenu pieauguma procesu. 
+Inflāciju mēra kā cenu vidējā līmeņa izmaiņu procentuālā izteiksmē
+noteiktā laika posmā - mēnesī, ceturksnī, gadā u.c.</p>
           </div>
       
         </div>
