@@ -1,16 +1,63 @@
 <?php include_once('navbar.php'); ?>
 
 <main>
-  <div class="wrapper">
-    <section class="case-vid">
-      <h2>Inflācija</h2>
-      <article>
-        <h3>Vispārējs cenu kāpums</h3>
-        <p>Tirgus ekonomikā preču un pakalpojumu cenas ik brīdi var mainīties. Dažas cenas pieaug, citas – samazinās. Par inflāciju runājam tad, kad vērojams vispārējs preču un pakalpojumu cenu kāpums, nevis pieaug tikai atsevišķu produktu cenas. Tas nozīmē, ka šodien par 1 euro var nopirkt mazāk nekā vakar. Citiem vārdiem runājot, inflācija laika gaitā samazina valūtas vērtību.</p>
-      </article>
-      <!-- Other articles -->
-    </section>
+
+<section class="case-vid">
+      
+<article>    
+<div class="container">
+  <div class="row">
+
+  <div class="col-md-4" style="margin-right: 300px; text-align: center">
+      <h3>INFLĀCIJA</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis convallis ipsum. Ut nec risus et dolor commodo viverra. Vestibulum scelerisque, nisl ut interdum feugiat, nunc sem suscipit est, nec vehicula ipsum nisi eget est.</p>
+    </div>
+    <div class="col-md-4">
+      <div class="image-container">
+        <img src="inflacija1.png" alt="Sample Image" class="img-fluid">
+      </div>
+    </div>
+
   </div>
+</div>
+
+<article>
+      <!-- Other articles -->
+</section>
+
+<section class="case-vid">
+      
+      <article>    
+      <div class="container" style="margin-top: 120px">
+        <div class="row">
+      
+        
+          <div class="col-md-4" style="margin-right: 50px">
+            <div class="image-container">
+            <iframe width="460" height="315" src="https://www.youtube.com/embed/ZfPxojh0Dyc?si=wIGCeQIVbpYXui20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="col-md-6" style="text-align: center">
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis convallis ipsum. Ut nec risus et dolor commodo viverra. Vestibulum scelerisque, nisl ut interdum feugiat, nunc sem suscipit est, nec vehicula ipsum nisi eget est.</p>
+          </div>
+      
+        </div>
+      </div>
+      
+      <article>
+            <!-- Other articles -->
+          </section>   
+  
+
+
+
+
+
+
+
+
 
   <!-- Quiz container -->
   <div id="quiz-container" class="wrapper">
@@ -38,6 +85,7 @@
 
 <?php include_once('footer.php'); ?>
 
+<script src="quiz.js"></script>
 <script>
   // Define quiz questions
   const questions = [
@@ -58,77 +106,6 @@
     }
   ];
 
-  let currentQuestionIndex = 0;
-  let correctAnswers = 0; // Variable to track correct answers
-  const quizContainer = document.getElementById('quiz-container');
-  const questionElement = document.getElementById('question');
-  const optionsElement = document.getElementById('options');
-  const progressBar = document.getElementById('progress-bar');
-  const congratulationsPopup = document.getElementById('congratulations-popup');
+quizGame(questions);
 
-  function showQuestion() {
-    const currentQuestion = questions[currentQuestionIndex];
-    questionElement.textContent = currentQuestion.question;
-    optionsElement.innerHTML = '';
-    currentQuestion.options.forEach((option, index) => {
-      const button = document.createElement('button');
-      button.textContent = option;
-      button.addEventListener('click', () => checkAnswer(index));
-      optionsElement.appendChild(button);
-    });
-    updateProgressBar();
-  }
-
-  function showCongratulationsPopupWithDelay() {
-    setTimeout(() => {
-        showCongratulationsPopup();
-    }, 800); // Adjust the delay time as needed (in milliseconds)
-}
-
-
-  function checkAnswer(selectedIndex) {
-    const currentQuestion = questions[currentQuestionIndex];
-    if (selectedIndex === currentQuestion.answer) {
-      correctAnswers++;
-      updateProgressBar();
-      currentQuestionIndex++;
-    } else{
-      resetQuiz();
-    }
-    
-    if (currentQuestionIndex < questions.length) {
-      showQuestion();
-    } else {
-      updateProgressBar();
-      showCongratulationsPopupWithDelay()
-    }
-  }
-
-  function updateProgressBar() {
-    const percentage = (correctAnswers / questions.length) * 100;
-    progressBar.style.width = `${percentage}%`;
-  }
-
-  function showCongratulationsPopup() {
-    quizContainer.style.display = 'none';
-    
-    congratulationsPopup.style.display = 'block';
-
-  }
-
-  function closePopup() {
-    congratulationsPopup.style.display = 'none';
-
-    resetQuiz();
-  }
-
-  function resetQuiz() {
-    currentQuestionIndex = 0;
-    correctAnswers = 0;
-    progressBar.style.width = '0%';
-    showQuestion();
-  }
-
-  // Start the quiz
-  showQuestion();
 </script>
