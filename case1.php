@@ -50,39 +50,94 @@ noteiktā laika posmā - mēnesī, ceturksnī, gadā u.c.</p>
         </div>
       </div>
       
-      <article>
-            <!-- Other articles -->
+      <article>   
           </section>   
   
 
 
 
+     <section class="case-vid">
+      
+      <article>    
+      <div class="container paragraph" style="margin-top: 50px; padding-right: 70px">
+        
+              <h1 style="font-size: 20px; color: #2A50BF">Pieprasījuma inflācija</h1>
+            <p>Pieprasījuma inflācijas cēlonis ir tas, ka patērētājiem ir daudz naudas un daudz naudas "skrien pakaļ" nelielam preču daudzumam.
+Pieprasījuma inflāciju var samazināt, ja samazina naudas daudzumu vai palielina preču daudzumu, vai īsteno abus pasākumus.</p>
+       
+      
+      </div>
+      <article>   
+          </section>   
 
 
 
 
 
+<section class="case-vid">
+      
+      <article>    
+      <div class="container paragraph" style="margin-top: 50px; padding-right: 100px">
+        
+              <h1 style="font-size: 20px; color: #2A50BF">Piedāvājuma inflācija</h1>
+            <p>Piedāvājuma inflācijas jeb izmaksu inflācijas cēlonis ir tas, ka ievērojami palielinās ražošanas izmaksas, 
+              preces kļūst dārgākas un par to pašu naudu var iegādāties mazāku preču daudzumu. Nauda kļūst mazvērtīga, naudas pirktspēja samazinās.</p>
+       
+      
+      </div>
+      <article>   
+          </section> 
 
-  <!-- Quiz container -->
-  <div id="quiz-container" class="wrapper">
-    <h2>Quiz</h2>
-    <div id="question"></div>
+
+
+ <section class="case-vid">
+      
+      <article>    
+      <div class="container paragraph" style="margin-top: 50px; padding-right: 100px">
+        
+              <h1>CPI</h1>
+            <p>CPI atspoguļo patēriņa groza vērtības izmaiņas pārskata periodā pret bāzes periodu - laiku, ar kuru salīdzina. Latvijā patēriņa grozā ietilps vairāk nekā 400 preču un pakalpojumu, kuru cenas ik mēnesi tiek novērtētas un reģistrētas 15 rajonos un pilsētās, apsekoti 1530 veikalu, ēdnīcas, tirgus, darbnīcas utt.
+Šim cenu līmenim pieaugot, no mājsaimniecības viedokļa naudas vērtība samazinās.</p>
+       
+      
+      </div>
+      <article>   
+          </section> 
+
+
+
+<section class="case-vid">
+        
+      <div id="quiz-container" class="wrapper" style="margin-top:50px">
+    <div id="question" style= "text-align: center"></div>
 
     <div class="progress">
       <div id="progress-bar" class="progress-bar"></div>
     </div>
-    <div id="options"></div>
+    <div id="options" class="btn" style="display: block;"></div>
   </div>
+
+
+
+
 
 <!-- Congratulations Popup -->
 <div id="congratulations-popup" class="popup" style= "display: none">
     <div class="popup-content">
 
-      <h2>Congratulations!</h2>
-      <p>You have completed the quiz successfully.</p>
+      <h2 style="text-align: center; margin: 50px 30px">Congratulations!<br>You have completed the quiz successfully.</h2>
+     
     </div>
   </div>
 
+     
+ </section> 
+
+
+
+
+  <!-- Quiz container -->
+  
 
 
 </main>
