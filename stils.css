@@ -177,16 +177,36 @@ header .header-cases{
   }
 }
 /*INDEX*/
+ /*
 .index-banner{
   width: 100%;
   height: calc(100vh - 100px);
-  background-image: url(bilde.jpg);
+  background-image: url(banner.png);
+  background-size: 50%;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   display: table;
 
 }
+*/
+
+ /* Custom styles */
+ .blue-background {
+  background-color: #003398; /* Blue background color */
+  color: #fff; /* White text color */
+  padding:200px 0px;
+  height: 100%;
+  text-align: center;
+  margin: 0 0;
+  
+}
+.landing-image {
+  padding: 0 0px;
+  margin: 0 0;
+
+}
+
+
 .vertical-center{
   display: table-cell;
   vertical-align: middle;
@@ -209,40 +229,45 @@ header .header-cases{
   text-align: center;
   font-weight: 100;
   text-shadow: 2px 2px 8px #111;
+  padding: 0 0;
 }
-.index-links div{
-  margin: 16px 16px 0;
-  width: calc(100% - 32px);
-  height: 100px;
-  background-color: #f2f2f2;
+.btn-outline-dark{
+border-radius: 50px;
+ padding: 10px 30px;
+ font-size: 30px;
 
 }
-
-.index-links div h3{
+.card {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.card-title {
   font-family: Catamaran;
-  font-size: 28px;
-  color: #111;
-  text-align: center;
+  font-size: 50px;
+  color: #003398;
   font-weight: 600;
-text-transform: uppercase;
-line-height: 100px;
 
 }
+.card-text {
+
+  font-family: Catamaran;
+  font-size: 24px;
+  color: #111;
+  font-weight: 400;
+  padding-bottom: 20px;
+
+
+}
+
+
+
 
 @media only screen and (min-width: 1000px) {
   .wrapper{
     width: 1000px;
     margin: 0 auto;
   }
-  .index-banner{
-    width: 100%;
-    height: 450px;
-    background-image: url(bilde.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: table;
-  }
+  
   .index-banner h1{
   display: block;
   width: 560px;
@@ -254,19 +279,10 @@ line-height: 100px;
 
   }
 
-  .index-links div {
-    margin: 20px 10px 0;
-    height: 230px;
-    background-color: #f2f2f2;
-    float: left;
 
-  }
 
   .index-boxlink-square{
   width: calc(25% - 20px) !important;
-  }
-  .index-boxlink-rectangle{
-  width: calc(50% - 20px) !important;
   }
 
   .index-links div h3{
@@ -274,6 +290,7 @@ line-height: 100px;
 
   }
 }
+
 /*cases*/
 .cases-links .classes-link{
   float: left;
@@ -337,7 +354,7 @@ margin: 0 20px;
 .case-vid h1{
   font-family: Catamaran;
   font-size: 20px;
-  color: #2A50BF;
+  color: #003398;
   font-weight: 600;
 text-transform: uppercase;
 
@@ -367,9 +384,9 @@ margin-top: 30px;
   box-sizing: border-box;
   color: #1A202C;
   display: inline-flex;
-  font-family: Inter, sans-serif;
+  font-family: Catamaran;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 800;
   height: 56px;
   justify-content: center;
   line-height: 24px;
@@ -405,6 +422,7 @@ footer ul li {
   display:block;
   list-style: none;
   text-transform: uppercase;
+  
 
 
 }
