@@ -406,49 +406,14 @@ margin-top: 30px;
 
 /*footer*/
 footer{
-  width: calc(100% - 80px);
+
   padding: 40px 40px;
   margin-top: 20px;
-  background-color: gray;
+  background-color: rgb(233, 233, 233);
   overflow: hidden;
 }
-footer ul {
-  width: fit-content;
-  float: left;
-  padding-left: 20px;
-  
-}
-footer ul li {
-  display:block;
-  list-style: none;
-  text-transform: uppercase;
-  
-
-
-}
-footer ul li a{
-  font-family: Catamaran;
-  font-size: 16px;
-  color: #fff;
-  line-height: 40px;
-}
-footer ul li p{
-  font-family: Catamaran;
-  font-size: 16px;
-  color: #fff;
-  line-height: 40px;
-}
-.footer-links-classes{
-  display: none;
-}
-.footer-sm {
-  width: 50px;
-  float: right;
-}
-.footer-sm img{
-  width: 60px;
-  float: right;
-  margin-bottom: 10px;
+a.footer {
+  margin-right: 10px;
 }
 
 @media only screen and (min-width: 1000px) {
