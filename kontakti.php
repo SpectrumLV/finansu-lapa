@@ -6,7 +6,7 @@
 
       <div class="col-md-6"style="padding-left: 150px">
           <div class="image-container">
-            <img src="contactinfo.jpg" alt="Sample Image" class="img-fluid">
+            <img src="images/contacts.jpg" alt="Sample Image" class="img-fluid">
           </div>
         </div>
 

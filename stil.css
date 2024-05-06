@@ -177,12 +177,13 @@ header .header-cases{
   }
 }
 /*INDEX*/
- /*
-.index-banner{
-  width: 100%;
+/*
+.landing-image{
+  width: 1000px;
+  height: 100%;
   height: calc(100vh - 100px);
-  background-image: url(banner.png);
-  background-size: 50%;
+
+  background-size: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   display: table;

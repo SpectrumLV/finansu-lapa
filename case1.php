@@ -16,7 +16,7 @@ noteiktā laika posmā - mēnesī, ceturksnī, gadā u.c.</p>
     </div>
     <div class="col-md-4">
       <div class="image-container">
-        <img src="inflacija1.png" alt="Sample Image" class="img-fluid">
+        <img src="images/inflacija1.png" alt="Sample Image" class="img-fluid">
       </div>
     </div>
 
@@ -149,18 +149,18 @@ Pieprasījuma inflāciju var samazināt, ja samazina naudas daudzumu vai palieli
   // Define quiz questions
   const questions = [
     {
-      question: "What causes inflation?",
-      options: ["Increase in money supply", "Decrease in money supply", "Stable money supply", "Change in interest rates"],
+      question: "Kas izraisa inflāciju?",
+      options: ["Palielinājums naudas piedāvājumā", "Samazinājums naudas piedāvājumā", "Stabils naudas piedāvājums", "Mainīgas procentu likmes"],
       answer: 0 // Index of the correct answer in options array
     },
     {
-      question: "What is the average inflation target in the eurozone?",
+      question: "Kāda ir vidējā procentu likme Eirozonā?",
       options: ["1%", "2%", "3%", "4%"],
       answer: 1
     },
     {
-      question: "How is inflation measured in the eurozone?",
-      options: ["GDP", "CPI", "Unemployment rate", "Trade balance"],
+      question: "Kā inflācija tiek mērīta Eirozonā?",
+      options: ["IKP", "CPI", "Bezdarba līmenis", "Darījumu balanss"],
       answer: 1
     }
   ];

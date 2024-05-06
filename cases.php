@@ -11,37 +11,37 @@
   </a>
   <a href="case2.php">
         <div class="classes-link">
-          <p>Iekšzemes kopprodukts</p>
+          <p>Monetārā politika</p>
+        </div>
+  </a>
+  <a href="case3.php">
+        <div class="classes-link">
+          <p>Valsts budžets un parāds</p>
+        </div>
+  </a>
+  <a href="case4.php">
+        <div class="classes-link">
+          <p>Saliktie procenti</p>
         </div>
   </a>
   <a href="case1.html">
         <div class="classes-link">
-          <p>Piemērs 3</p>
+          <p>IKP</p>
         </div>
   </a>
   <a href="case1.html">
         <div class="classes-link">
-          <p>Piemērs 4</p>
+          <p>Fiskālā politika</p>
         </div>
   </a>
   <a href="case1.html">
         <div class="classes-link">
-          <p>Piemērs 5</p>
+          <p>Pieprasījums un piedāvājums</p>
         </div>
   </a>
   <a href="case1.html">
         <div class="classes-link">
-          <p>Piemērs 6</p>
-        </div>
-  </a>
-  <a href="case1.html">
-        <div class="classes-link">
-          <p>Piemērs 7</p>
-        </div>
-  </a>
-  <a href="case1.html">
-        <div class="classes-link">
-          <p>Piemērs 8</p>
+          <p>Vienkāršie procenti</p>
         </div>
   </a>
 
