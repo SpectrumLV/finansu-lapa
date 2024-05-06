@@ -38,7 +38,7 @@ include_once 'navbar.php';
     <section class="case-vid">
       
      
-    <h1 style= "text-align: center; padding: 90px; font-size: 5rem; text-transform: none">Info par platformu</h1>
+    <h1 style= "text-align: center; padding: 90px; font-size: 5rem; text-transform: none">Informācija par platformu</h1> 
       
 </section>
 

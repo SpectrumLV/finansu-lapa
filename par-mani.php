@@ -4,7 +4,7 @@
        
      
 
-      <h1 style= "text-align: center; padding-bottom: 50px; font-size: 2rem; text-transform: none">Info par platformu</h1>
+      <h1 style= "text-align: center; padding-bottom: 50px; font-size: 2rem; text-transform: none">KRLM Vērtības</h1>
         <div class="row" style= "text-align: left; margin-bottom: 50px; padding: 0 100px">
       
         
